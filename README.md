@@ -12,6 +12,7 @@ Set up a demo site using Bootstrap
 
 4. Create a file named "index.html" with the following content
 
+```
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -39,6 +40,7 @@ Set up a demo site using Bootstrap
     <script src="js/bootstrap.min.js"></script>
     </body>
     </html>
+```
 
 5. Create an orphan branch named gh-pages
 
