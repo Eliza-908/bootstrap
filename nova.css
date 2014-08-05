@@ -1,0 +1,57 @@
+body { padding-top: 0px; }  /* needed so top navbar won't overlay content */
+
+/*  Styling for left nav */
+
+body {
+  font-size: 14px;
+}
+
+#my-nav-list > li > a {
+  padding: 0px 0px;
+}
+
+/*  Styling for navbar along top */
+
+.navbar-default {
+  background-color: #AA0007;
+  color: #ddd;
+}
+.navbar-default .navbar-text, .navbar-default .navbar-nav li a {
+  color: #ccc;
+}
+.navbar-default .navbar-nav .active li a {
+  background-color: #bbb;
+  color: #000;
+}
+
+/* Styling for side navbar */
+
+#my-nav-list {
+  width:156px;  /* Note: for 2 medium columns, use 156 = 2*78 */
+  position:fixed;
+  top:60px;
+}
+
+.nav-tabs li a {  /* default side nav-tabs */
+  background-color: #eee;
+  color: #333;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover {  /* active side nav-tabs */
+  color: #ccc;
+  background: #AA0007;
+  border: 1px solid #AA0007; 
+}
+
+/* other custom styling */
+
+.nova-red {
+  border-color: #AA0007;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
