@@ -1,18 +1,18 @@
 
 #Set up a demo Bootstrap site
 
-##Follow the instructions to set up a <a href="https://pages.github.com/">GitHub Pages</a> website
+Follow <a href="https://pages.github.com/">these instructions</a> to set up website GitHub Pages website.
 
-##Create a new repository, call it "bootstrap"
+Create a new repository, call it "bootstrap"
 
-##Clone the repository onto your Mac.  If you have xCode installed, then you can type
+Clone the repository onto your Mac.  If you have xCode installed, then you can type
 
 ```
     git clone git@github.com:pbogden/bootstrap.git
     cd bootstrap
 ```
 
-##Create a file named "index.html" with the following content
+Create a file named "index.html" with the following content
 
 ```
     <!DOCTYPE html>
@@ -44,7 +44,7 @@
     </html>
 ```
 
-##Create an orphan branch named gh-pages
+Create an orphan branch named gh-pages
 
 ```
     git checkout --orphan gh-pages
@@ -52,6 +52,6 @@
     git commit -m "first commit to gh-pages branch"
 ```
     
-##Push the file to the repository and browse to http://pbogden.github.io/bootstrap
+Push the file to the repository and browse to http://pbogden.github.io/bootstrap
 
 
