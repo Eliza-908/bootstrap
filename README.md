@@ -1,9 +1,9 @@
 
 #Set up a demo Bootstrap site
 
-Follow <a href="https://pages.github.com/">these instructions</a> to set up website GitHub Pages website.
+Follow <a href="https://pages.github.com/">these instructions</a> to set up a GitHub Pages website.
 
-Create a new repository, call it "bootstrap"
+Once you have the website working, create a new repository. Call it "bootstrap".
 
 Clone the repository onto your Mac.  If you have xCode installed, then you can type
 
