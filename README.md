@@ -1,16 +1,11 @@
 
 #Set up a demo Bootstrap site
 
-First, set up your own href="https://pages.github.com/">Github Pages</a> website.
+This repo has its own <a href="http://pbogden.github.com/bootstrap">project page</a>.  The "index.html" file has all the <a href="http://getbootstrap.com">Bootstrap</a> links you need -- no downloads necessary. 
 
-Then <a href="https://help.github.com/articles/duplicating-a-repository">clone</a> this repository.  
-If you have git installed, then you can type
+To create your own version, first set up your own <a href="https://pages.github.com/">Github Pages</a> website.
 
-```
-    git clone git@github.com:pbogden/bootstrap.git
-    cd bootstrap
-```
+Then <a href="https://help.github.com/articles/fork-a-repo">fork</a> this repository. 
 
-Push the file to the repository and browse to http://pbogden.github.io/bootstrap
-
+Finally, browse to your forked project page: http://YOUR-USERNAME.github.io/bootstrap
 
