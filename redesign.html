@@ -118,13 +118,19 @@
 
 <script>
 
-// DATA-TO-DECISIONS image-reload functionality
+// DATA-TO-DECISIONS image-reload functionality and captions
+var data = { "prime_opportunities": "Here's a caption with a <a href='http://www.npr.org'>link</a>",
+             "emerging_threats": "Here's another caption, same <a href='http://www.npr.org'>link</a>",
+             "weak_signal_analysis": "Yet another caption, no link",
+             "economic_factor_analysis": "Yet another caption",
+             "weak_signal_analysis": "Hard to believe it's another caption",
+             "social_media_watchboard": "Finally, the last caption"};
 $('ul.nav-sidebar > li:first').each(replaceDiv);
 $('ul.nav-sidebar > li').click(replaceDiv);
 function replaceDiv() {
-  var filename = "images/" + $(this).attr("id");
-  $('#examples_img').html("<img height='300' width='600' src='" + filename + ".png'>");
-  $.post(filename + ".txt", function(data) { $('#examples_txt').html(data); });
+  var id = $(this).attr("id");
+  $('#examples_img').html("<img height='300' width='600' src='images/" + id + ".png'>");
+  $('#examples_txt').html(data[id]);
   $('ul.nav-sidebar > li').removeClass("active");
   $(this).addClass("active");
 };
