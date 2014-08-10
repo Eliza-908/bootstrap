@@ -4,31 +4,55 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
     <title>Novametrics LLC</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-    <!-- Custom Novametrics CSS -->
-    <link href="oldesign/nova.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+<style>
+#title {
+  text-align: center;
+}
 
+#login {
+  margin-top: 15px;
+}
+
+.nav-sidebar > li.active {
+  background-color: #eee;
+}
+</style>
 </head>
+
 <body>
 
-<!-- Fixed navbar along top -->
+<!-- Logo & Login -->
 
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
+<div class='container-fluid'>
+ <div class='row'>
+   <div class='col-sm-2'>
+     <div id='Logo'>
+       <img src="images/Novametrics-logo.png" width="219" height="63">
+     </div>
+   </div><!-- /.col -->
+   <div class='col-sm-8'>
+   </div><!-- /.col -->
+   <div class='col-sm-2'>
+       <button class="btn btn-large btn-default pull-right" id="login">Log In</button>
+   </div><!-- /.col -->
+ </div><!-- /.row -->
+</div><!-- /.container -->
+
+<!-- Navbar along top -->
+
+<div class="container-fluid">
+  <div class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
@@ -36,120 +60,126 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-<!--      <a class="navbar-brand" href="#">Novametrics LLC</a> -->
     </div><!--/.navbar-header -->
 
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/database">Database</a></li>
-            <li><a href="/africom">AFRICOM</a></li>
-            <li><a href="/impact">Impact Investments</a></li>
-            <li><a href="/">Aid & Development</a></li>
-            <li><a href='/logout'>Logout</a></li>
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">Our Approach</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Us</a></li>
       </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar-fixed-top -->
-
-  <hr>
-  <hr>
-
-  <div class='container-fluid'>
-   <div class='col-md-12'>
-     <div id='Logo'>
-       <img src="oldesign/Novametrics-logo.png" width="219" height="63">
-     </div>
-   </div><!-- .col -->
-  </div><!-- .container -->
-
-<div class="container">
-
-<!-- Headder text -->
-  <div class="row">
-  <div class="col-sm-12"> 
-    <h2>Data-Driven Decisions</h2> 
-    <ul>
-      <li><h3>Data Fusion: <small>Adapting methodologies originally developed for advanced signal analysis, Novametrics optimizes outcomes and identifies risks through the integration of large and diverse data sets.</small></h3></li>
-      <li><h3>Weak-Signal Analysis: <small>Novametrics detects and amplifies “weak signals” – characteristics not readily apparent in any set of observations, but frequently predictive of behavior.</small></h3></li>
-    </ul>
-  </div><!-- /.col -->
-</div><!-- /.row -->
-
-<hr class='nova-red'>
-
-<div class="row">
-  <div class="col-md-4">
-    <div class='thumbnail'>
-      <img class='img-responsive' src="oldesign/Africom.png" width="290" height="173">
-      <div class='caption'>
-        <h3>AFRICOM</h3>
-        <ul>
-          <li>Providing early warning of emerging threats</li> 
-          <li>Establishing characteristics for successful military actions </li>
-          <li>Predicting breeding grounds for terrorism </li>
-          <li>Optimizing investments in peace-keeping activities </li> 
-        </ul>
-           <p><a href="/africom" class="btn btn-primary" role="button">Continue</a></p>
-      </div><!-- /.caption --> 
-    </div><!-- /.thumbnail --> 
-  </div><!-- /.col --> 
-
-  <div class="col-md-4"> 
-    <div class='thumbnail'>
-      <img class='img-responsive' src="oldesign/Investors.png">
-      <div class='caption'>
-        <h3>Impact Investment Funds</h3>
-        <ul>
-          <li>Identifying prime opportunities</li>
-          <li>Streamlining due diligence</li>
-          <li>Mitigating risk</li>
-          <li>Optimizing investments – highest profit, lowest risk, greatest impact</li>
-        </ul>
-           <p><a href="/impact" class="btn btn-primary" role="button">Continue</a></p>
-      </div><!-- /.caption -->
-    </div><!-- /.thumbnail -->
-  </div><!-- /.col -->
-
-  <div class="col-md-4"> 
-    <div class='thumbnail'>
-      <img class='img-responsive' src="oldesign/Development.png">
-      <div class='caption'>
-        <h3>Aid/Development Organizations</h3>
-        <ul>
-          <li>Predicting humanitarian crisis</li> 
-          <li>Identifying vulnerability to poverty traps</li>
-          <li>Optimizing investments in sustainable development</li>
-        </ul>
-           <p><a href="/" class="btn btn-primary" role="button">Unavailable</a></p>
-      </div><!-- /.caption -->
-    </div><!-- /.thumbnail -->
-  </div><!-- /.col -->
-
-</div><!-- /.row -->
-
+    </div><!--/.navbar-collapse -->
+  </div><!--/.navbar -->
 </div><!--/.container -->
 
+<!-- SLIDE SHOW -->
 
-    <div style='height: 80px'>
+<div class='container-fluid'>
+  <div id="carousel" class="carousel slide col-lg-8 col-offset-2">
+    <ol class="carousel-indicators">
+      <li data-target="Carousel" data-slide-to="0" class="active"></li>
+      <li data-target="Carousel" data-slide-to="1"></li>
+      <li data-target="Carousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <img data-src="javascripts/holder.js/1300x500" class="img-responsive">
+        <div class='carousel-caption'>
+          <h3>Hello, world!</h3>
+        </div>
+      </div>
+      <div class="item">
+        <img data-src="javascripts/holder.js/1300x500" class="img-responsive">
+        <div class='carousel-caption'>
+          <h3>Second caption goes here.</h3>
+        </div>
+      </div>
+      <div class="item">
+        <img data-src="javascripts/holder.js/1300x500" class="img-responsive">
+        <div class='carousel-caption'>
+          <h3>You don't need to use captions.</h3>
+        </div>
+      </div>
     </div>
 
-    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-    <div class="container">
-        <p class="navbar-text">&copy; 2014 Novametrics, LLC</p>
-    </div>
-    </div>
+    <a class="left carousel-control" href="#Carousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#Carousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div><!--/.carousel -->
+</div><!--/.container -->
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <link src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+<hr>
+
+<!-- DATA-TO-DECISIONS sidebar nav -->
+
+<div id="d2d" class="container">
+  <div class="row">
+    <h2 id="title"> DATA-TO-DECISIONS </h2>
+    <div class="col-md-4 sidebar">
+      <ul class="nav navbar-default nav-sidebar">
+        <li id="prime_opportunities" class="active"><a href="#d2d">PRIME OPPORTUNITIES</a></li>
+        <li id="emerging_threats"><a href="#d2d">EMERGING THREATS</a></li>
+        <li id="weak_signal_analysis"><a href="#d2d">WEAK-SIGNAL ANALYSIS</a></li>
+        <li id="economic_factor_analysis"><a href="#d2d">ECONOMIC FACTOR ANALYSIS</a></li>
+        <li id="social_media_watchboard"><a href="#d2d">SOCIAL MEDIA WATCHBOARD</a></li>
+      </ul><!-- /.nav -->
+    </div><!-- /.col -->
+    <div class="col-md-8">
+      <div id="examples_img"></div>
+      <div id="examples_txt"></div>
+    </div><!--/.col -->
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+<div style='height: 80px'>
+</div>
+
+<div class='container-fluid'>
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="navbar-text">
+      &copy; 2014 Novametrics, LLC
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="javascripts/jquery-1.11.0.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+
+<!-- placeholder-image generator for testing/debugging only -->
+<script src="javascripts/holder.js"></script>
 
 <script>
-$('ul.navbar-nav > li:contains("Home")').first().attr('class','active')
-</script>
 
-  </body>
+// SLIDE SHOW
+
+$('#carousel').carousel();
+
+// DATA-TO-DECISIONS
+
+var data = { "prime_opportunities": "Here's a caption with a <a href='http://www.npr.org'>link</a>",
+             "emerging_threats": "Here's another caption, same <a href='http://www.npr.org'>link</a>",
+             "weak_signal_analysis": "Yet another caption, no link",
+             "economic_factor_analysis": "Yet another caption",
+             "weak_signal_analysis": "Hard to believe it's another caption",
+             "social_media_watchboard": "Finally, the last caption"};
+$('ul.nav-sidebar > li:first').each(replaceDiv);
+$('ul.nav-sidebar > li').click(replaceDiv);
+function replaceDiv() {
+  var id = $(this).attr("id");
+  $('#examples_img').html("<img height='300' width='600' src='images/" + id + ".png'>");
+  $('#examples_txt').html(data[id]);
+  $('ul.nav-sidebar > li').removeClass("active");
+  $(this).addClass("active");
+};
+
+</script>
+</body>
 </html>
