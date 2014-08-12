@@ -55,3 +55,8 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+img.header-logos {
+  display: block;
+  height: 120px;
+}
