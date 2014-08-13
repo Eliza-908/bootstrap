@@ -1,4 +1,6 @@
+#Bootstrap demo
 
+<<<<<<< HEAD
 <<<<<<< HEAD
  This is the gh-pages branch
 =======
@@ -12,4 +14,11 @@ Then <a href="https://help.github.com/articles/fork-a-repo">fork</a> this reposi
 
 Finally, browse to your forked project page: http://YOUR-USERNAME.github.io/bootstrap
 >>>>>>> master
+=======
+This is the gh-pages branch, which is served <a href="http://pbogden.github.io/bootstrap">here</a>.
+
+<a href="http://pbogden.github.io/bootstrap/oldesign.html">This</a> is a prototype of the home page with the old design.
+
+The production site is <a href="http://www.novametricsllc.com">here</a>.
+>>>>>>> origin/patch-6
 
