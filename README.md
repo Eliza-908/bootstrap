@@ -1,9 +1,11 @@
 
-#Set up a demo Bootstrap site
+#Bootstrap demo
 
-This repo has its own <a href="http://pbogden.github.com/bootstrap">project page</a>.  The "index.html" file has all the <a href="http://getbootstrap.com">Bootstrap</a> links you need -- no downloads necessary. 
+We're using this site to prototype content changes on the <a href="http://www.novametricsllc.com">Novametrics site</a>.
 
-To create your own version, first set up your own <a href="https://pages.github.com/">Github Pages</a> website.
+The gh-pages branch of this repo contains all the content for the <a href="http://pbogden.github.com/bootstrap">project page</a>.
+
+To create your own version of the protype site (served by github), first set up your own <a href="https://pages.github.com/">Github Pages</a> website.
 
 Then <a href="https://help.github.com/articles/fork-a-repo">fork</a> this repository. 
 
