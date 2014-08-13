@@ -56,8 +56,15 @@ img {
   margin-right: auto;
 }
 
+<<<<<<< HEAD
 .D3 {
   margin-left:auto;
   margin-right:auto;
 }
 
+=======
+img.header-logos {
+  display: block;
+  height: 120px;
+}
+>>>>>>> origin/patch-5
