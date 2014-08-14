@@ -27,6 +27,6 @@ img.picrow {
 	width:960px;
 }
 
-img:hover {
+img.picrow:hover {
 	opacity: 0.4;
 }
