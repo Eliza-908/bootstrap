@@ -9,24 +9,11 @@
   background-color: #eee;
 }
 
-.footerul {
-	list-style-type:none;
-	padding:0;
-	margin:0;
-	color:white;
-		}
 #sitemap {
-	background-color:#BDBDBD;
-	color:white;
-		}
-img.picrow {
-	padding:1px;
-	border:1px solid #021a40;
-		}
+  background-color:#BDBDBD;
+  color:white;
+}
+
 .mission {
-	background-color:#E6E6E6;
-	padding:4px;
-		}
-#statements {
-	padding-top:5px;
-		}
+  background-color:#E6E6E6;
+}
