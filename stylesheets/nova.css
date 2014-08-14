@@ -1,0 +1,36 @@
+#title {
+  text-align: center;
+}
+
+#login {
+  margin-top: 15px;
+  background-color:red;
+  border-color:red;
+  color:white;
+}
+
+.nav-sidebar > li.active {
+  background-color: #eee;
+}
+
+.footerul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	color:white;
+		}
+#sitemap {
+	background-color:#BDBDBD;
+	color:white;
+		}
+img.picrow {
+	padding:1px;
+	border:1px solid #021a40;
+		}
+.mission {
+	background-color:#E6E6E6;
+	padding:4px;
+		}
+#statements {
+	padding-top:5px;
+		}
