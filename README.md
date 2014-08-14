@@ -3,6 +3,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
  This is the gh-pages branch
+ Just testing if this commit works
+ 
 =======
 #Set up a demo Bootstrap site
 
