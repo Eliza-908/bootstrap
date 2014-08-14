@@ -1,4 +1,3 @@
-#Bootstrap demo
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8,6 +7,7 @@
 =======
 #Set up a demo Bootstrap site
 
+<<<<<<< HEAD
 This repo has its own <a href="http://pbogden.github.com/bootstrap">project page</a>.  The "index.html" file has all the <a href="http://getbootstrap.com">Bootstrap</a> links you need -- no downloads necessary. 
 
 To create your own version, first set up your own <a href="https://pages.github.com/">Github Pages</a> website.
@@ -24,3 +24,8 @@ This is the gh-pages branch, which is served <a href="http://pbogden.github.io/b
 The production site is <a href="http://www.novametricsllc.com">here</a>.
 >>>>>>> origin/patch-6
 
+=======
+<a href="http://pbogden.github.io/bootstrap/oldesign.html">This</a> is a prototype of the home page with the old design.
+
+The production site is <a href="http://www.novametricsllc.com">here</a>.
+>>>>>>> FETCH_HEAD
