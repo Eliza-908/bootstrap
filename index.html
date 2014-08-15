@@ -272,7 +272,7 @@ $('ul.nav-sidebar > li:first').each(replaceDiv);
 $('ul.nav-sidebar > li').click(replaceDiv);
 function replaceDiv() {
   var id = $(this).attr("id");
-  $('#examples_img').html("<img height='300' width='600' src='images/" + id + ".png'>");
+  $('#examples_img').html("<img class='d2d' height='300' width='600' src='images/" + id + ".png'>");
   $('#examples_txt').html(data[id]);
   $('ul.nav-sidebar > li').removeClass("active");
   $(this).addClass("active");
