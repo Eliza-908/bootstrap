@@ -30,10 +30,8 @@
 </head>
 <body>
 
-<!-- Fixed navbar along top -->
-
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
+<div class="container">
+  <div class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
@@ -41,22 +39,41 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-<!--      <a class="navbar-brand" href="#">Novametrics LLC</a> -->
     </div><!--/.navbar-header -->
 
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/database">Database</a></li>
-            <li><a href="africom">Emerging Threats</a></li>
-            <li><a href="invest">Impact Investments</a></li>
-            <li><a href="/">Aid & Development</a></li>
-            <li><a href='/logout'>Logout</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Who We Are <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="vision.html">Vision</a></li>
+            <li><a href="bios.html">Bios</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Approach <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="unDa.html">Unique Databases</a></li>
+            <li><a href="inMe.html">Innovative Methodologies</a></li>
+            <li><a href="d2d.html">Data-to-Decision</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="impact.html">Impact Investing</a></li>
+            <li><a href="threats.html">Emerging Threats</a></li>
+            <li><a href="aid.html">Aid & Development</a></li>
+            <li><a href="market.html">Market Analysis</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar-fixed-top -->
+    </div><!--/.navbar-collapse -->
+  </div><!--/.navbar -->
+</div><!--/.container -->
 
 <div style='height: 50px'></div>
 
@@ -178,11 +195,13 @@ Using the previous selection criteria, our analysis optimized:
     <div style='height: 80px'>
     </div>
 
-    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-    <div class="container">
-        <p class="navbar-text">&copy; 2014 Novametrics, LLC</p>
-    </div>
-    </div>
+	<div class='container-fluid'>
+	  <div class="navbar navbar-default navbar-fixed-bottom">
+	    <div class="navbar-text">
+	      &copy; 2014 Novametrics, LLC
+	    </div>
+	  </div>
+	</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
