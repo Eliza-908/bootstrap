@@ -34,3 +34,8 @@ img.picrow:hover {
 img.d2d:hover {
 	opacity:0.4;
 }
+
+.thumbnail {
+	margin-left:auto;
+	margin-right:auto;
+}
