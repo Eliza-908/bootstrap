@@ -62,5 +62,9 @@ img.header-logos {
 }
 
 #login {
-	background-color:red;
+  margin-top: 15px;
+  background-color:red;
+  border-color:red;
+  color:white;
 }
+
