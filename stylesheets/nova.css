@@ -15,7 +15,11 @@
 }
 
 .mission {
-  background-color:#eee;
+  background-color:#fff;
+  opacity:0.5;
+}
+#missionStatement {
+	margin-left:5px;
 }
 
 img.picrow {
