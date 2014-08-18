@@ -1,5 +1,5 @@
 
-# Design-prototyping repo for the Novamatrics site.
+# Designing www.novametricsllc.com
 
 The gh-pages branch is served <a href="http://pbogden.github.io/bootstrap">here</a>.
 
