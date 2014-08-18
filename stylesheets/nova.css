@@ -36,6 +36,5 @@ img.d2d:hover {
 }
 
 .thumbnail {
-	margin-left:auto;
-	margin-right:auto;
+	margin-right:0px;
 }
