@@ -1,11 +1,9 @@
 
-# Designing www.novametricsllc.com
+# Redesigning www.novametricsllc.com
 
 The gh-pages branch is served <a href="http://pbogden.github.io/bootstrap">here</a>.
 
 The old design is <a href="http://pbogden.github.io/bootstrap/oldesign.html">here</a>.
-
-The production site is <a href="http://www.novametricsllc.com">here</a>.
 
 # Collaboration workflow
 
