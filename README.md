@@ -10,21 +10,21 @@ The old design is <a href="http://pbogden.github.io/bootstrap/oldesign.html">her
 We're using the <a href="https://help.github.com/articles/using-pull-requests">fork & pull model</a>
 for collaborative development.
 
-Get latest copy of the "origin" == pbogden/bootstrap
+##Get latest copy of the "origin" == pbogden/bootstrap
 
-    $ git pull origin master
-    $ git pull origin gh-pages
+    git pull origin master
+    git pull origin gh-pages
 
-  2.  Make a new branch for development starting at current HEAD
+##Make a new branch for development starting at current HEAD
 
-    $ git branch my-dev-branch
+    git branch my-dev-branch
 
-  3.  Start developing new branch
+##Start developing new branch
 
-    $ git branch                   (list branches)
-    $ git checkout my-dev-branch   (may not be necessary)
+    git branch                   (list branches)
+    git checkout my-dev-branch   (may not be necessary)
  
-  4.  Merge a file (dev-file.txt) from the development branch 
+##Merge a file (dev-file.txt) from the development branch 
 
-    $ git checkout gh-pages
-    $ git checkout my-dev-branch dev-file.txt
+    git checkout gh-pages
+    git checkout my-dev-branch dev-file.txt
