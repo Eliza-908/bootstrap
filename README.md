@@ -12,9 +12,9 @@ The old design is <a href="http://pbogden.github.io/bootstrap/oldesign.html">her
 We're using the <a href="https://help.github.com/articles/using-pull-requests">fork & pull model</a>
 for collaborative development.
 
-The development branch will be a <a href="https://help.github.com/articles/fork-a-repo">fork</a> of the staging repo.
+The development repo will be a <a href="https://help.github.com/articles/fork-a-repo">fork</a> of the staging repo.
 
-Pull requests from initiated from the development branch will be checked and merged with the staging branch.  The development branch should remain in sync with the staging branch.  If a pull request requires modification, then changes will be migrated to production once those changes are in sync with the development branch.
+Pull requests from initiated from the development branch will be checked and integrated with the staging branch.  The development branch should remain in sync with the staging branch.  If a pull request requires modification, then changes will be migrated to production after the staging and development repos are in sync, thereby assuring that the production site looks like the staging branch.
 
 ####Get latest copy of the "origin" == pbogden/bootstrap
 
@@ -28,7 +28,7 @@ Pull requests from initiated from the development branch will be checked and mer
 ####Start developing new branch
 
     git branch                   (list branches)
-    git checkout my-dev-branch   (may not be necessary)
+    git checkout my-dev-branch
  
 ####Merge a file (dev-file.txt) from the development branch 
 
