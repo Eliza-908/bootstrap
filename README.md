@@ -21,8 +21,8 @@ If a merged pull request requires modification, then migration to production wil
 the staging and development repos are in sync. 
 
 The staging repo must be <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork">
-configured as the upstream remote </a>
- for the development branch.
+configured as the upstream remote</a> for the development branch, and kept in
+<a href="https://help.github.com/articles/syncing-a-fork">sync</a>.
 
 ####Get latest copy of the "origin" == pbogden/bootstrap
 
