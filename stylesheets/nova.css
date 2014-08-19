@@ -15,5 +15,22 @@
 }
 
 .mission {
-  background-color:#E6E6E6;
+  background-color:#C3C3C3;
+}
+
+img.picrow {
+	padding:1px;
+	border:1px solid #021a40;
+}
+
+#main {
+	width:960px;
+}
+
+img.picrow:hover {
+	opacity: 0.4;
+}
+
+img.d2d:hover {
+	opacity:0.4;
 }

@@ -12,7 +12,7 @@ body {
 
 /*  Styling for navbar along top */
 
-.navbar-default {
+/* .navbar-default {
   background-color: #AA0007;
   color: #ddd;
 }
@@ -59,4 +59,16 @@ img {
 img.header-logos {
   display: block;
   height: 120px;
+}
+
+#login {
+  margin-top: 15px;
+  background-color:red;
+  border-color:red;
+  color:white;
+}
+
+.thumbnail {
+	margin-left:auto;
+	margin-right:auto;
 }
