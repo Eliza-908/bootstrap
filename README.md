@@ -1,3 +1,4 @@
+
 # Redesigning www.novametricsllc.com
 
 The staging (gh-pages) branch is <a href="http://pbogden.github.io/bootstrap">here</a>.  This is what the production site will look like.
