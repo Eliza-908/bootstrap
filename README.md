@@ -14,9 +14,10 @@ for collaborative development.
 
 The development repo will be a <a href="https://help.github.com/articles/fork-a-repo">fork</a> of the staging repo.
 
-Pull requests from initiated from the development branch will be checked and integrated with the staging branch.  The development branch should remain in sync with the staging branch.  
+Pull requests from initiated from the development branch will be checked 
+and <a href="https://help.github.com/articles/merging-a-pull-request">merged</a> with the staging branch.  The development branch should remain in sync with the staging branch.  
 
-If a pull request requires modification, then migration to production will only occur if 
+If a merged pull request requires modification, then migration to production will only occur if 
 the staging and development repos are in sync. 
 
 ####Get latest copy of the "origin" == pbogden/bootstrap
