@@ -16,8 +16,8 @@ The development repo will be a <a href="https://help.github.com/articles/fork-a-
 
 Pull requests from initiated from the development branch will be checked and integrated with the staging branch.  The development branch should remain in sync with the staging branch.  
 
-If a pull request requires modification, then changes to the staging repo will be migrated to production after 
-the staging and development repos are in sync. This assures that the production site looks like an "acceptable" version of the development branch.
+If a pull request requires modification, then migration to production will only occur if 
+the staging and development repos are in sync. 
 
 ####Get latest copy of the "origin" == pbogden/bootstrap
 
