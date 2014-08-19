@@ -17,3 +17,7 @@
 .mission {
   background-color:#E6E6E6;
 }
+
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}
