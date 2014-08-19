@@ -20,6 +20,9 @@ and <a href="https://help.github.com/articles/merging-a-pull-request">merged</a>
 If a merged pull request requires modification, then migration to production will only occur if 
 the staging and development repos are in sync. 
 
+The staging repo must be configured as the upstream remote 
+<a href="https://help.github.com/articles/configuring-a-remote-for-a-fork"> for the development branch.</a>
+
 ####Get latest copy of the "origin" == pbogden/bootstrap
 
     git pull origin master
