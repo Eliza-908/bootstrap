@@ -19,8 +19,9 @@ Pull requests initiated from the development branch will
 then migrated to the production site.
 
 The development branch should be up to date before initiating a pull request.
-If a merged pull request requires modification, then migration to production will only occur if 
-the staging and development repos are in <a href="https://help.github.com/articles/syncing-a-fork">sync</a>.
+If a pull request requires modification before merging, then migration to production will only occur if 
+the staging and development repos are in <a href="https://help.github.com/articles/syncing-a-fork">sync</a>
+with those modifications.
 
 ###Configuration
 
