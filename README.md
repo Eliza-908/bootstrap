@@ -14,11 +14,16 @@ for collaborative development.
 
 The development repo will be a <a href="https://help.github.com/articles/fork-a-repo">fork</a> of the staging repo.
 
-Pull requests from initiated from the development branch will be checked 
-and <a href="https://help.github.com/articles/merging-a-pull-request">merged</a> with the staging branch.  The development branch should remain in sync with the staging branch.  
+Pull requests initiated from the development branch will
+<a href="https://help.github.com/articles/merging-a-pull-request">merged</a> with the staging branch,
+then migrated to the production site.
 
 If a merged pull request requires modification, then migration to production will only occur if 
 the staging and development repos are in sync. 
+The development branch should remain in sync with the staging branch, and should be up to date before initiating
+a pull request.
+
+###Configuration
 
 The staging repo must be <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork">
 configured as the upstream remote</a> for the development branch, and kept in
