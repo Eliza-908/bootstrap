@@ -23,7 +23,7 @@ If a pull request requires modification before merging, then migration to produc
 the staging and development repos are in <a href="https://help.github.com/articles/syncing-a-fork">sync</a>
 with those modifications.
 
-###Configuration
+####Configuration
 
 The staging repo should be <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork">
 configured as the upstream remote</a> for the development branch. 
