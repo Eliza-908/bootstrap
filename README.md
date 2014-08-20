@@ -18,16 +18,14 @@ Pull requests initiated from the development branch will
 <a href="https://help.github.com/articles/merging-a-pull-request">merged</a> with the staging branch,
 then migrated to the production site.
 
+The development branch should be up to date before initiating a pull request.
 If a merged pull request requires modification, then migration to production will only occur if 
-the staging and development repos are in sync. 
-The development branch should remain in sync with the staging branch, and should be up to date before initiating
-a pull request.
+the staging and development repos are in <a href="https://help.github.com/articles/syncing-a-fork">sync</a>.
 
 ###Configuration
 
-The staging repo must be <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork">
-configured as the upstream remote</a> for the development branch, and kept in
-<a href="https://help.github.com/articles/syncing-a-fork">sync</a>.
+The staging repo should be <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork">
+configured as the upstream remote</a> for the development branch. 
 
 ####Get latest copy of the "origin" == pbogden/bootstrap
 
