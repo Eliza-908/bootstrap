@@ -42,7 +42,7 @@ with those modifications.
     git log
     git reset --hard <commit>
 
-######Merge changes and update and update github
+######Merge changes and update github
 
     git checkout gh-pages
     git merge --no-ff Eliza-908-gh-pages
@@ -52,7 +52,6 @@ with those modifications.
 
     git branch -d Eliza-908-gh-pages  (local)
     git push origin :Eliza-908-gh-pages (github) 
-
 
 ####On development repo...
 
