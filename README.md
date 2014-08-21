@@ -1,5 +1,5 @@
 
-# Redesigning www.novametricsllc.com
+## Redesigning www.novametricsllc.com
 
 The staging (gh-pages) branch is <a href="http://pbogden.github.io/bootstrap">here</a>.  This is what the production site will look like.
 
@@ -7,7 +7,7 @@ The development (gh-pages) branch is <a href="http://eliza-908.github.io/bootstr
 
 The old design is <a href="http://pbogden.github.io/bootstrap/oldesign.html">here</a>.
 
-## Collaboration workflow
+## Development workflow
 
 We're using the <a href="https://help.github.com/articles/using-pull-requests">fork & pull model</a>
 for collaborative development.
