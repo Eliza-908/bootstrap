@@ -37,6 +37,11 @@ with those modifications.
 
     git diff gh-pages..Eliza-908-gh-pages
 
+######Recover from a git pull (= git fetch + git merge)
+
+    git log
+    git reset --hard <commit>
+
 ######Merge changes and update and update github
 
     git checkout gh-pages
