@@ -12,14 +12,16 @@ The old design is <a href="http://pbogden.github.io/bootstrap/oldesign.html">her
 We're using the <a href="https://help.github.com/articles/using-pull-requests">fork & pull model</a>
 for collaborative development.
 
-The development repo will be a <a href="https://help.github.com/articles/fork-a-repo">fork</a> of the staging repo.
+The development repo is a <a href="https://help.github.com/articles/fork-a-repo">fork</a> of the staging repo.
 
-Pull requests initiated from the development branch will
+Pull requests initiated from the development branch will be
 <a href="https://help.github.com/articles/merging-a-pull-request">merged</a> with the staging branch,
 then migrated to the production site.
 
-The development branch should be up to date before initiating a pull request.
-If a pull request requires modification before merging, then migration to production will only occur if 
+The <a href="https://github.com/eliza-908/bootstrap">development repo</a> should be up to date 
+before initiating a pull request.
+
+If a pull request must be modified before merging, then migration to production will only occur after
 the staging and development repos are in <a href="https://help.github.com/articles/syncing-a-fork">sync</a>
 with those modifications.
 
