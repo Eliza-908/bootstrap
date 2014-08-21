@@ -25,6 +25,29 @@ If a pull request must be modified before merging, then migration to production 
 the staging and development repos are in <a href="https://help.github.com/articles/syncing-a-fork">sync</a>
 with those modifications.
 
+####On staging repo...
+
+######Checkout pull request
+
+    git checkout -b Eliza-908-gh-pages gh-pages
+    git pull git@github.com:Eliza-908/bootstrap.git gh-pages
+
+######Compare two branches
+
+    git diff gh-pages..Eliza-908-gh-pages
+
+######Merge changes and update and update github
+
+    git checkout gh-pages
+    git merge --no-ff Eliza-908-gh-pages
+    git push origin gh-pages
+
+######Delete a dev branch
+
+    git branch -d Eliza-908-gh-pages  (local)
+    git push origin :Eliza-908-gh-pages (github) 
+
+
 ####On development repo...
 
 ######Configure upstream remote
@@ -57,21 +80,3 @@ configured as the upstream remote</a> for the development branch.
 
     git checkout gh-pages
     git checkout my-dev-branch dev-file.txt
-
-####On staging repo...
-
-######Checkout and test pull request
-
-    git checkout -b Eliza-908-gh-pages gh-pages
-    git pull git@github.com:Eliza-908/bootstrap.git gh-pages
-
-######Merge changes and update and update github
-
-    git checkout gh-pages
-    git merge --no-ff Eliza-908-gh-pages
-    git push origin gh-pages
-
-######Delete a dev branch
-
-    git branch -d Eliza-908-gh-pages  (local)
-    git push origin :Eliza-908-gh-pages (github) 
