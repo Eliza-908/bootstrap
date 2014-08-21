@@ -25,7 +25,9 @@ If a pull request must be modified before merging, then migration to production 
 the staging and development repos are in <a href="https://help.github.com/articles/syncing-a-fork">sync</a>
 with those modifications.
 
-####Configure upstream remote
+####On development repo...
+
+######Configure upstream remote
 
 The staging repo should be <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork">
 configured as the upstream remote</a> for the development branch. 
@@ -34,7 +36,7 @@ configured as the upstream remote</a> for the development branch.
     git remote add upstream https://github.com/pbogden/bootstrap.git
     git remote -v     (verify new configuration -- see <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork">docs</a>)
 
-####Sync fork with upstream remote
+######Sync fork with upstream remote
 
     git fetch upstream
     git checkout master
@@ -42,16 +44,34 @@ configured as the upstream remote</a> for the development branch.
     git checkout gh-pages
     git merge upstream gh-pages
 
-####Make a new branch for development/testing starting at current HEAD
+######Make a new branch for development/testing starting at current HEAD
 
     git branch my-dev-branch
 
-####Start developing new branch
+######Start developing/testing a new branch
 
     git branch                   (list branches)
     git checkout my-dev-branch
  
-####Merge a file (dev-file.txt) from the development branch 
+######Merge a file (dev-file.txt) from a development/testing branch 
 
     git checkout gh-pages
     git checkout my-dev-branch dev-file.txt
+
+####On staging repo...
+
+######Checkout and test pull request
+
+    git checkout -b Eliza-908-gh-pages gh-pages
+    git pull git@github.com:Eliza-908/bootstrap.git gh-pages
+
+######Merge changes and update and update github
+
+    git checkout gh-pages
+    git merge --no-ff Eliza-908-gh-pages
+    git push origin gh-pages
+
+######Delete a dev branch
+
+    git branch -d Eliza-908-gh-pages  (local)
+    git push origin :Eliza-908-gh-pages (github) 
