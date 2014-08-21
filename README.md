@@ -29,8 +29,9 @@ with those modifications.
 
 ######Checkout pull request
 
-    git checkout -b Eliza-908-gh-pages gh-pages
-    git pull git@github.com:Eliza-908/bootstrap.git gh-pages
+    git checkout -b Eliza-908-gh-pages gh-pages                (create a *new* branch with pull request)
+    git checkout Eliza-908-gh-pages                            (...or if that branch already exists)
+    git pull git@github.com:Eliza-908/bootstrap.git gh-pages   (update the branch with pull request)
 
 ######Compare two branches
 
