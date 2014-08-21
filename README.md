@@ -23,17 +23,24 @@ If a pull request requires modification before merging, then migration to produc
 the staging and development repos are in <a href="https://help.github.com/articles/syncing-a-fork">sync</a>
 with those modifications.
 
-####Configuration
+####Configure upstream remote
 
 The staging repo should be <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork">
 configured as the upstream remote</a> for the development branch. 
 
-####Get latest copy of the "origin" == pbogden/bootstrap
+    git remote -v     (list current remote)
+    git remote add upstream https://github.com/pbogden/bootstrap.git
+    git remote -v     (verify new configuration -- see <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork">docs</a>)
 
-    git pull origin master
-    git pull origin gh-pages
+####Sync fork with upstream remote
 
-####Make a new branch for development starting at current HEAD
+    git fetch upstream
+    git checkout master
+    git merge upstream master
+    git checkout gh-pages
+    git merge upstream gh-pages
+
+####Make a new branch for development/testing starting at current HEAD
 
     git branch my-dev-branch
 
