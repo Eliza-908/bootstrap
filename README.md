@@ -21,7 +21,7 @@ then migrated to the production site.
 The <a href="https://github.com/eliza-908/bootstrap">development repo</a> should be up to date 
 before initiating a pull request.
 
-If a pull request must be modified before merging, then migration to production will only occur after
+If a pull request must be modified before merging, then migration to production will occur only after
 the development repo is in <a href="https://help.github.com/articles/syncing-a-fork">sync</a>
 with those modifications.
 
@@ -34,7 +34,7 @@ configured as the upstream remote</a> for the development branch.
 
     git remote -v     (list current remote)
     git remote add upstream https://github.com/pbogden/bootstrap.git
-    git remote -v     (verify new configuration -- see <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork">docs</a>)
+    git remote -v     (verify new configuration)
 
 ######Sync fork with upstream remote
 
@@ -44,14 +44,14 @@ configured as the upstream remote</a> for the development branch.
     git checkout gh-pages
     git merge upstream gh-pages
 
-######Make a new branch for testing (starting at current HEAD)
+######Make a new branch of gh-pages for testing (starting at HEAD)
 
+    git checkout gh-pages
     git branch my-new-branch
 
-######Start developing/testing a new branch
+######Start developing/testing the new branch
 
     git checkout my-new-branch
-    git branch                   (list branches)
 
 or, if my-new-branch doesn't exist yet
 
@@ -64,7 +64,7 @@ or, if my-new-branch doesn't exist yet
 
 ####On staging repo...
 
-######Checkout pull request
+######Checkout the pull request
 
     git checkout -b Eliza-908-gh-pages gh-pages                (create a *new* branch)
     git checkout Eliza-908-gh-pages                            (...or if that branch exists)
@@ -87,7 +87,7 @@ or, if my-new-branch doesn't exist yet
     git commit -m "merged only the_new_file_file_from_pull.txt"
     git push origin gh-pages
 
-######Merge all changes and update github
+######Merge all changes from pull request and update github
 
     git checkout gh-pages
     git merge --no-ff Eliza-908-gh-pages
@@ -95,5 +95,5 @@ or, if my-new-branch doesn't exist yet
 
 ######Delete a dev branch
 
-    git branch -d Eliza-908-gh-pages  (local)
-    git push origin :Eliza-908-gh-pages (github) 
+    git branch -d Eliza-908-gh-pages      (local)
+    git push origin :Eliza-908-gh-pages   (github) 
