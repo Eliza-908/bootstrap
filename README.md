@@ -74,6 +74,10 @@ or, if my-new-branch doesn't exist yet
 
     git diff gh-pages..Eliza-908-gh-pages
 
+######Compare file on two branches
+
+    git diff gh-pages Eliza-908-gh-pages -- file_to_compare.txt
+
 ######Recover from a git pull (= git fetch + git merge)
 
     git log
