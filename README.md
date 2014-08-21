@@ -25,6 +25,43 @@ If a pull request must be modified before merging, then migration to production 
 the development repo is in <a href="https://help.github.com/articles/syncing-a-fork">sync</a>
 with those modifications.
 
+####On development repo...
+
+######Configure upstream remote
+
+The staging repo should be <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork">
+configured as the upstream remote</a> for the development branch. 
+
+    git remote -v     (list current remote)
+    git remote add upstream https://github.com/pbogden/bootstrap.git
+    git remote -v     (verify new configuration -- see <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork">docs</a>)
+
+######Sync fork with upstream remote
+
+    git fetch upstream
+    git checkout master
+    git merge upstream master
+    git checkout gh-pages
+    git merge upstream gh-pages
+
+######Make a new branch for testing (starting at current HEAD)
+
+    git branch my-new-branch
+
+######Start developing/testing a new branch
+
+    git checkout my-new-branch
+    git branch                   (list branches)
+
+or, if my-new-branch doesn't exist yet
+
+    git checkout -b my-new-branch <branch>
+ 
+######Merge a file (my_test_file.txt) from a development/testing branch 
+
+    git checkout gh-pages
+    git checkout my-dev-branch my_test_file.txt
+
 ####On staging repo...
 
 ######Checkout pull request
@@ -52,36 +89,3 @@ with those modifications.
 
     git branch -d Eliza-908-gh-pages  (local)
     git push origin :Eliza-908-gh-pages (github) 
-
-####On development repo...
-
-######Configure upstream remote
-
-The staging repo should be <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork">
-configured as the upstream remote</a> for the development branch. 
-
-    git remote -v     (list current remote)
-    git remote add upstream https://github.com/pbogden/bootstrap.git
-    git remote -v     (verify new configuration -- see <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork">docs</a>)
-
-######Sync fork with upstream remote
-
-    git fetch upstream
-    git checkout master
-    git merge upstream master
-    git checkout gh-pages
-    git merge upstream gh-pages
-
-######Make a new branch for development/testing starting at current HEAD
-
-    git branch my-dev-branch
-
-######Start developing/testing a new branch
-
-    git branch                   (list branches)
-    git checkout my-dev-branch
- 
-######Merge a file (dev-file.txt) from a development/testing branch 
-
-    git checkout gh-pages
-    git checkout my-dev-branch dev-file.txt
