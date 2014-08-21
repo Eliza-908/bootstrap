@@ -14,15 +14,15 @@ for collaborative development.
 
 The development repo is a <a href="https://help.github.com/articles/fork-a-repo">fork</a> of the staging repo.
 
-Pull requests initiated from the development branch will be
-<a href="https://help.github.com/articles/merging-a-pull-request">merged</a> with the staging branch,
+Pull requests initiated from the *gh-pages* branch of the development repo will be
+<a href="https://help.github.com/articles/merging-a-pull-request">merged</a> with the staging repo,
 then migrated to the production site.
 
 The <a href="https://github.com/eliza-908/bootstrap">development repo</a> should be up to date 
 before initiating a pull request.
 
 If a pull request must be modified before merging, then migration to production will only occur after
-the staging and development repos are in <a href="https://help.github.com/articles/syncing-a-fork">sync</a>
+the development repo is in <a href="https://help.github.com/articles/syncing-a-fork">sync</a>
 with those modifications.
 
 ####On staging repo...
