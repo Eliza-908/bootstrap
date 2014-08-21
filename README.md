@@ -79,7 +79,15 @@ or, if my-new-branch doesn't exist yet
     git log
     git reset --hard <commit>
 
-######Merge changes and update github
+######Merge one file from pull request
+
+    git checkout gh-pages
+    git checkout Eliza-908-gh-pages the_new_file_from_pull.txt
+    git add .
+    git commit -m "merged only the_new_file_file_from_pull.txt"
+    git push origin gh-pages
+
+######Merge all changes and update github
 
     git checkout gh-pages
     git merge --no-ff Eliza-908-gh-pages
