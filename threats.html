@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
     <title>Novametrics LLC</title>
@@ -14,7 +12,7 @@
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
 
     <!-- Custom Novametrics CSS -->
-    <link href="oldesign/nova.css" rel="stylesheet">
+    <link href="stylesheets/nova.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -22,14 +20,22 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
+
+  <link type='text/css' rel='stylesheet' href='/stylesheets/style.css' />
+  <link type='text/css' rel='stylesheet' href='/stylesheets/weak.css' />
+  <link type="text/css" rel="stylesheet" href="/stylesheets/scatter.css"/>
+
 </head>
 <body>
+
+
+<!-- Logo & Login -->
 
 <div class='container'>
  <div class='row'>
    <div class='col-sm-2'>
      <div id='Logo'>
-       <a href="index.html"><img src="images/Novametrics-logo.png" width="219" height="63"></a>
+       <a href="/"><img src="images/Novametrics-logo.png" width="219" height="63"></a>
      </div>
    </div>
    <div class='col-sm-8'>
@@ -51,43 +57,42 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    </div><!--/.navbar-header -->
+    </div><!-- /.navbar-header -->
 
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Who We Are <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="aboutUs.html">About Us</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="vision.html">Vision</a></li>
-            <li><a href="bios.html">Bios</a></li>
+            <li><a href="about">About Us</a></li>
+            <li><a href="history">History</a></li>
+            <li><a href="vision">Vision</a></li>
+            <li><a href="bios">Bios</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Approach <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="unDa.html">Unique Databases</a></li>
-            <li><a href="inMe.html">Innovative Methodologies</a></li>
-            <li><a href="d2d.html">Data-to-Decision</a></li>
+            <li><a href="database">Unique Databases</a></li>
+            <li><a href="methods">Innovative Methodologies</a></li>
+            <li><a href="d2d">Data-to-Decision</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="impact.html">Impact Investing</a></li>
-            <li><a href="threats.html">Emerging Threats</a></li>
-            <li><a href="aid.html">Aid & Development</a></li>
-            <li><a href="market.html">Market Analysis</a></li>
+            <li><a href="invest">Impact Investing</a></li>
+            <li><a href="threats">Emerging Threats</a></li>
+            <li><a href="aid">Aid & Development</a></li>
+            <li><a href="market">Market Analysis</a></li>
           </ul>
         </li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact">Contact Us</a></li>
       </ul>
-    </div><!--/.navbar-collapse -->
-  </div><!--/.navbar -->
-</div><!--/.container -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.navbar -->
+</div><!-- /.container -->
 
-<div style='height: 70px'></div>
 
 <div class="container">
 
@@ -95,15 +100,16 @@
     <div class="col-sm-6">
       <h1 style='margin-top: 0'>Emerging Threats</h1>
       <p> Novametrics predicts instability, outbreaks of civil violence, and breeding grounds for terrorism. We also provide an interpretive platform for communication analysis. </p>
+      <p> In 2013, Novametrics received a Phase II Small Business Innovative Research (SBIR) award from the Office of the Secretary of Defense.</p>
      </div><!-- /.col -->
      <div class="col-sm-2">
-       <img class='img-thumbnail header-logos' src="oldesign/DeptOfDefense logo.png">
+       <img class='img-thumbnail row-of-logos' src="images/DeptOfDefense logo.png">
      </div>
      <div class="col-sm-2">
-       <img class='img-thumbnail header-logos' src="oldesign/Africom logo.png">
+       <img class='img-thumbnail row-of-logos' src="images/Africom logo.png">
      </div>
      <div class="col-sm-2">
-       <img class='img-thumbnail header-logos' src="oldesign/aro-logo.gif">
+       <img class='img-thumbnail row-of-logos' src="images/aro-logo.gif">
      </div>
   </div><!-- /.row-->
 
@@ -120,7 +126,7 @@ In 2012, the United States Army in Africa received reports that Boko Haram influ
        </ol>
     </div><!-- /.col -->
     <div class="col-md-4">
-        <img class='img-responsive' src="oldesign/africom/badguys.png" width=250 height=150>
+        <img class='img-responsive' src="images/threats/badguys.png" width=250 height=150>
     </div><!-- /.col -->
   </div><!-- /.row-->
     <hr>
@@ -135,7 +141,7 @@ Press "Start" to track the frequency of Boko Haram attacks.</p>
 
   <div class="row">
     <div class="col-xs-12">
-     <div style="text-align:center;" id='dynamic_plot'> <img src="graphics/dynamicPlot.svg"> </div>
+      <div id="dynamic_plot"></div>
     </div><!-- /.col -->
   </div><!-- /.row -->
 
@@ -151,15 +157,15 @@ view the northward migration of conflicts and emergence of conflicts related to 
   <div class="row">
     <div class="col-md-12">
       <h4>2. Calculating Vulnerability to Future Attacks</h4>
-      <p> Novametrics implemented our "Weak Signal Analysis" to identify the regions becoming vulnerable to Boko Haram. Our proprietary methods integrate and analyze large numbers of social-cultural and environmental datasets. The analysis is demonstrated below in three steps.  Click start forth data integration, click analyze for the weak signal analysis, and click verify to confirm the results. </p>
+      <p> Novametrics implemented our "Weak Signal Analysis" to identify the regions becoming vulnerable to Boko Haram. Our proprietary methods integrate and analyze large numbers of socio-cultural and environmental datasets. The analysis is demonstrated below in three steps.  Click "Start" for the data integration, click "Analyze" for the weak signal analysis, and click "Verify" to confirm the results. </p>
     </div><!-- /.col -->
   </div><!-- /.row -->
 
    <div class="row">
    <div class="col-md-12">
-     <div style="text-align:center;" id='weakPlot'> <img src="graphics/weakPlot.svg"> </div>
+     <div id='weakPlot'></div>
      <div style='height:5px'></div>
-     <div style="text-align:center;" id='nigeriaPlot'> <img src="graphics/nigeriaPlot.svg"> </div>
+     <div id='nigeriaPlot'></div>
    </div><!-- /.col -->
  </div><!-- /.row -->
 
@@ -185,7 +191,7 @@ view the northward migration of conflicts and emergence of conflicts related to 
 <p> In the months following the assessment (Dec. 2012), Boko Haram increased their activity.  In November 2013, the US declares Boko Haram a terrorist group.  April 2014, Boko Haram kidnaps over 200 girls from a school in Borno, previously identified by the analysis above as one of the most vulnerable states. Novametrics continues to monitor the evolution of these groups, assess regions that are potential breeding grounds for extremism, and evaluate organizational linkages with al Qaeda.</p>
     </div><!-- /.col -->
     <div class="col-md-5">
-      <img class='img-responsive' src="oldesign/africom/bbc-video.jpg">
+      <img class='img-responsive' src="images/threats/bbc-video.jpg">
     </div>
   </div><!-- .row -->
 
@@ -195,13 +201,11 @@ view the northward migration of conflicts and emergence of conflicts related to 
     <div style='height: 80px'>
     </div>
 
-	<div class='container-fluid'>
-	  <div class="navbar navbar-default navbar-fixed-bottom">
-	    <div class="navbar-text">
-	      &copy; 2014 Novametrics, LLC
-	    </div>
-	  </div>
-	</div>
+    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div class="container">
+        <p class="navbar-text">&copy; 2014 Novametrics, LLC</p>
+    </div>
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -209,14 +213,18 @@ view the northward migration of conflicts and emergence of conflicts related to 
     <script src="javascripts/jquery-1.11.0.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="javascripts/jquery-1.11.0.min.js"></script>
-    <link src="dist/js/bootstrap.min.js">
 
 <script>
 $('ul.navbar-nav > li:contains("Emerging")').first().attr('class','active')
+</script>
+<script src="/d3/d3.min.js"></script>
+<script src="/d3/topojson.js"></script>
+<script src="/d3/queue.min.js"></script>
+<script src="/javascripts/weak.min.js"></script>
+<script src="/javascripts/my.min.js"></script>
+
+<script>
+weak();
 </script>
 
   </body>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Novametrics LLC</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+    <!-- Custom Novametrics CSS -->
+    <link href="stylesheets/nova.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+
+  <link rel='stylesheet' href='stylesheets/style.css' />
+  <link rel='stylesheet' href='stylesheets/d3.css' />
+  <link rel='stylesheet' href='stylesheets/colorbrewer.css' />
+  <link rel='stylesheet' href='stylesheets/treemap.css' />
+
+</head>
+<body>
+
+
+<!-- Logo & Login -->
+
+<div class='container'>
+ <div class='row'>
+   <div class='col-sm-2'>
+     <div id='Logo'>
+       <a href="/"><img src="images/Novametrics-logo.png" width="219" height="63"></a>
+     </div>
+   </div>
+   <div class='col-sm-8'>
+   </div>
+   <div class='col-sm-2'>
+       <button class="btn btn-large btn-default pull-right" id="login">Log In</button>
+   </div>
+ </div><!-- /.row -->
+</div><!-- /.container -->
+
+<!-- Navbar along top -->
+
+<div class="container">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div><!-- /.navbar-header -->
+
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Who We Are <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="about">About Us</a></li>
+            <li><a href="history">History</a></li>
+            <li><a href="vision">Vision</a></li>
+            <li><a href="bios">Bios</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Approach <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="database">Unique Databases</a></li>
+            <li><a href="methods">Innovative Methodologies</a></li>
+            <li><a href="d2d">Data-to-Decision</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="invest">Impact Investing</a></li>
+            <li><a href="threats">Emerging Threats</a></li>
+            <li><a href="aid">Aid & Development</a></li>
+            <li><a href="market">Market Analysis</a></li>
+          </ul>
+        </li>
+        <li><a href="contact">Contact Us</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.navbar -->
+</div><!-- /.container -->
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Impact Investing Case Study:  Environmentally-Sustainable Economic Development</h1>
+      <ul class='lead'>
+         <li>Streamlining the due-diligence process for successful business ventures.</li>
+         <li>Identifying prime investment opportunities and risk-mitigation strategies.</li>
+      </ul>
+  </div><!-- /.col -->
+  </div><!-- /.row-->
+
+  <hr class='nova-red'>
+
+  <div class="row">
+    <div class="col-md-9">
+        <p>
+        Objective:  Many consider the “Holy Grail” of Impact Investing to be the sustainable use of natural resources for promoting economic development.  In such cases, the goal is to use a nation’s own natural resources to create products whereby the value-added to the natural resources will benefit the host nation.  Identifying the optimal business opportunities require a comprehensive assessment and optimization of hundreds of factors.  As a result, many impact investment funds have been forced away from investing in “start-ups” — the very business enterprises that are the effective engines for economic growth and quality job creation.  Novametrics’ predictive capability allows organizations to navigate confidently frontier environments that others consider inaccessible or high-risk. 
+        </p>
+    </div><!-- /.col -->
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <img class='img-responsive' src="images/invest/3circles.png">
+      </div>
+    </div><!-- /.col -->
+  </div><!-- /.row-->
+
+<hr class='nova-red'>
+
+<!--   --    --   --   --   --   --   --> 
+<!--      Emmatrix                    -->
+<!--   --    --   --   --   --   --   --> 
+
+    <div class="row">
+      <div class="col-md-12"> 
+        <h4>Step 1: Maximizing impact and sustainability</h4>
+        <hr>
+        <p>The Novametrics database contains a full array of datasets for evaluating the socio-economic, environmental, and infrastructure landscape.
+The dynamic graphic below demonstrates database analysis for Liberia. Critical factors for identifying prime development opportunities can be sorted and evaluated.
+      <ol>
+         <li>Random Order -- Factors are unsorted. </li>
+         <li>Order by Group -- Factors are related to one another and ranked based on case-specificgoals. Darker colors within each group represent higher ranking.</li>
+         <li>Order by Rank -- Factors are sorted based on rankings to identify prime sectors (mouse over colored cells to identify categories).</li>
+      </ol>
+The analysis identified the under-used natural resource of rubber and the strong labor potential as a prime opportunity.</p> 
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+    <div class="row">
+      <div class="col-md-2"> 
+        <select id="order" class="form-control btn-md btn-primary">
+          <option value="random">Random Order</option>
+          <option value="bucket">Order by Group</option>
+          <option value="rank">Order by Rank</option>
+        </select>
+      </div><!-- /.col -->
+      <div class="col-md-10">
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+    <div class="row">
+      <div class="col-md-12"> 
+        <div id="breedtrix">
+        </div>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+<hr class='nova-red'>
+
+    <div class="row">
+      <div class="col-md-12"> 
+        <h4>Step 2: Identifying prime location for investment</h4>
+        <hr>
+        <p>
+Novametrics algorithms were then used to identify the prime location through the optimization of measures for land productivity, work force quality, infrastructure, and market access; and the mitigation of such risk factors as instability, conflict, and environmental disruptions.
+        </p>
+     </div><!-- /.col -->
+    </div><!-- /.row -->
+
+    <div class="row">
+      <div class="col-md-12"> 
+        <div id="alltree">
+        </div>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+<hr class='nova-red'>
+
+    <div class="row">
+      <div class="col-md-12"> 
+        <h4>Step 3: Results</h4>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+    <div class="row">
+      <div class="col-md-4"> 
+        <p>Using the Novametrics statistical and geospatial analysis, optimal locations were identified (red circles).  Site visits to both these locations were undertaken and a final selection was made.  </p>
+      </div><!-- /.col -->
+      <div class="col-md-8"> 
+        <img src="/images/invest/breedmap_v3.png" class='img-responsive' alt="Liberia hot spots" />
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+    
+    <div class="row">
+        <div class="col-md-4">
+            <img src="/images/invest/breedmap_v3.png" class='img-responsive' alt="President Sirleaf" />
+            <p>Articles of Incorporation presented by the President of Liberia, Ellen-Johnson Sirleaf, and the project was awarded financial incentives as a national priority investment.</p>
+        </div><!-- /.col -->
+        <div class="col-md-4">
+            <img src="/images/invest/breedmap_v3.png" class='img-responsive' alt="Manufacturing Plant" />
+            <p>Manufacturing plant designed as a thesis within the Engineering Department at Princeton University. Manufacturing plant is carbon-neutral and operates off the grid.</p>
+        </div><!-- /.col -->
+        <div class="col-md-4">
+            <img src="/images/invest/IMG_0906.jpg" class='img-responsive' alt="Man in Field" />
+            <p>A consortium of rubber farmers was formed to provide organically grown, fair-trade latex. The organizational structure occurred under Liberia's educational institutions as part of their agricultural training and research curriculum.</p>
+        </div><!-- /.col -->
+    </div>
+
+
+<script src="d3/d3.min.js"></script>
+<script src="d3/topojson.js"></script>
+<script src="javascripts/my.min.js"></script>
+
+
+</div><!-- /.container -->
+
+
+    <div style='height: 80px'>
+    </div>
+
+    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div class="container">
+        <p class="navbar-text">&copy; 2014 Novametrics, LLC</p>
+    </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="javascripts/jquery-1.11.0.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+
+
+<script>
+  alltree();
+  $('ul.navbar-nav > li:contains("Invest")').first().attr('class','active');
+</script>
+
+</body>
+</html>

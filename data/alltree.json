@@ -1,0 +1,221 @@
+{
+    "name": "Value-Added Agricultural Products",
+    "image": "CombinedProfitSum+RiskSum.png",
+    "children": [
+        {
+            "name": "Profit Optimization",
+            "image": "ProfitSummation.png",
+            "children": [
+                {
+                    "name": "Land Productivity",
+                    "image": "Cropland_value.png",
+                    "children": [
+                        {
+                            "name": "Cropland value density"
+                        },
+                        {
+                            "name": "Access to land"
+                        },
+                        {
+                            "name": "Agricultural activity",
+                            "children": [
+                                {
+                                    "name": "Agricultural tools used per hectare"
+                                },
+                                {
+                                    "name": "Seeds used per hectare"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Work Force Quality",
+                    "image": "WorkForce.png",
+                    "children": [
+                        {
+                            "name": "Health",
+                            "children": [
+                                {
+                                    "name": "% children de-worm"
+                                },
+                                {
+                                    "name": "Prevalence of wasting (under age 5)"
+                                },
+                                {
+                                    "name": "Prevalence of stunting (under age 5)"
+                                },
+                                {
+                                    "name": "Prevalence of underweight (under age 5)"
+                                },
+                                {
+                                    "name": "Prevalence of fever"
+                                },
+                                {
+                                    "name": "Prevalence of diarrhea"
+                                },
+                                {
+                                    "name": "Prevalence of cough"
+                                },
+                                {
+                                    "name": "% w/access to improved drinking water"
+                                },
+                                {
+                                    "name": "% w/acess to improved sanitation"
+                                },
+                                {
+                                    "name": "Hospital beds / 1000"
+                                },
+                                {
+                                    "name": "Health-care workers / 1000"
+                                },
+                                {
+                                    "name": "Immunization"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Education",
+                            "children": [
+                                {
+                                    "name": "Total gross enrollment (ages 6-18)"
+                                },
+                                {
+                                    "name": "% enrollment (ages 6-18)"
+                                },
+                                {
+                                    "name": "Total female gross enrollment (6-18)"
+                                },
+                                {
+                                    "name": "Female/Male enrollment (6-18)"
+                                },
+                                {
+                                    "name": "Food for education"
+                                },
+                                {
+                                    "name": "Educational support"
+                                },
+                                {
+                                    "name": "Net enrollment ratio in primary education"
+                                },
+                                {
+                                    "name": "% completion of primary education"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Economics",
+                            "children": [
+                                {
+                                    "name": "Per capita total expenditure"
+                                },
+                                {
+                                    "name": "Per capita food expenditure"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Demographics",
+                            "children": [
+                                {
+                                    "name": "Average household size"
+                                },
+                                {
+                                    "name": "Population density"
+                                },
+                                {
+                                    "name": "Employment rate"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Market Acccess",
+                    "image": "Market_Access.png",
+                    "children": [
+                        {
+                            "name": "Infrastructure",
+                            "children": [
+                                {
+                                    "name": "% road coverage under reconstruction"
+                                },
+                                {
+                                    "name": "Road density"
+                                },
+                                {
+                                    "name": "% all-weather roads"
+                                },
+                                {
+                                    "name": "% population 2mi all-weather road"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Risk Mitigation",
+            "image": "RiskSummation.png",
+            "children": [
+                {
+                    "name": "Conflict vulnerabilty",
+                    "image": "ConflictRisk.png",
+                    "children": [
+                        {
+                            "name": "Frequency"
+                        },
+                        {
+                            "name": "Severity"
+                        }
+                    ]
+                },
+                {
+                    "name": "Instability",
+                    "image": "InstabilityRisk.png",
+                    "children": [
+                        {
+                            "name": "Migration vulnerability",
+                            "children": [
+                                {
+                                    "name": "% pop.that leaves & returns not displaced"
+                                },
+                                {
+                                    "name": "% population never displaced"
+                                },
+                                {
+                                    "name": "% population displaced < 1 year"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Shock"
+                        }
+                    ]
+                },
+                {
+                    "name": "Environmental Change",
+                    "image": "EnvironmentalRisk.png",
+                    "children": [
+                        {
+                            "name": "Fractional drought"
+                        },
+                        {
+                            "name": "Growing season"
+                        },
+                        {
+                            "name": "Natural disasters"
+                        },
+                        {
+                            "name": "El Nino / La Nina"
+                        },
+                        {
+                            "name": "Crop resiliency"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
